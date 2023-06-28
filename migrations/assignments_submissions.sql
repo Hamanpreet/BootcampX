@@ -7,6 +7,7 @@ CREATE TABLE assignments (
   duration INTEGER
 );
 
+
 CREATE TABLE assignment_submissions (
   id SERIAL PRIMARY KEY NOT NULL,
   assignment_id INTEGER REFERENCES assignments(id) ON DELETE CASCADE,
