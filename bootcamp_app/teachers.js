@@ -9,7 +9,7 @@ const pool = new Pool({
   database: 'bootcampx'
 });
 
-const cohortName = process.argv[2];
+const cohortName = process.argv[2] || 'JUL02';
 
 // Store all potentially malicious values in an array.
 const values = [`%${cohortName}%`];
